@@ -74,15 +74,15 @@ For the first 2 rounds each player needs to place a colored cube in a tile that 
 
 |terrain|picture|terrain|picture|
 |-------|-------|-------|-------|
-|forest| <img src="./images/tiles/forest.png" width=100> |cabin| <img src="./images/tiles/cabin.png" width=100> |
-|desert| <img src="./images/tiles/desert.png" width=100> |rock| <img src="./images/tiles/rock.png" width=100> |
-|marsh| <img src="./images/tiles/marsh.png" width=100> |puma (red border)| <img src="./images/tiles/puma.png" width=100> |
-|lake| <img src="./images/tiles/lake.png" width=100> |bear (black border)| <img src="./images/tiles/bear.png" width=100> |
-|mountain| <img src="./images/tiles/mountain.png" width=100> |
+|forest| <img src="./assets/images/tiles/forest.png" width=100> |cabin| <img src="./assets/images/tiles/cabin.png" width=100> |
+|desert| <img src="./assets/images/tiles/desert.png" width=100> |rock| <img src="./assets/images/tiles/rock.png" width=100> |
+|marsh| <img src="./assets/images/tiles/marsh.png" width=100> |puma (red border)| <img src="./assets/images/tiles/puma.png" width=100> |
+|lake| <img src="./assets/images/tiles/lake.png" width=100> |bear (black border)| <img src="./assets/images/tiles/bear.png" width=100> |
+|mountain| <img src="./assets/images/tiles/mountain.png" width=100> |
 
 ## Map
 
-<img src="./images/map.png" width=600>
+<img src="./assets/images/map.png" width=600>
 
 ## Initial Clues for 4 players
 
@@ -117,23 +117,23 @@ setup phase, where each player have to put down two cubes
 
 |description|image|
 |------|----|
-|Initial map with cabin and rock placed|<img src="./images/simulation/simulation - 0.jpg" width=300> |
-|player A put a red cube|<img src="./images/simulation/simulation - 1.jpg" width=300> |
-|player B put a green cube|<img src="./images/simulation/simulation - 2.jpg" width=300> |
-|player E put a blue cube|<img src="./images/simulation/simulation - 3.jpg" width=300> |
-|player G put a orange cube|<img src="./images/simulation/simulation - 4.jpg" width=300> |
-|player A put a red cube|<img src="./images/simulation/simulation - 5.jpg" width=300> |
-|player B put a green cube|<img src="./images/simulation/simulation - 6.jpg" width=300> |
-|player E put a blue cube|<img src="./images/simulation/simulation - 7.jpg" width=300> |
-|player G put a orange cube|<img src="./images/simulation/simulation - 8.jpg" width=300> |
+|Initial map with cabin and rock placed|<img src="./assets/images/simulation/simulation - 0.jpg" width=300> |
+|player A put a red cube|<img src="./assets/images/simulation/simulation - 1.jpg" width=300> |
+|player B put a green cube|<img src="./assets/images/simulation/simulation - 2.jpg" width=300> |
+|player E put a blue cube|<img src="./assets/images/simulation/simulation - 3.jpg" width=300> |
+|player G put a orange cube|<img src="./assets/images/simulation/simulation - 4.jpg" width=300> |
+|player A put a red cube|<img src="./assets/images/simulation/simulation - 5.jpg" width=300> |
+|player B put a green cube|<img src="./assets/images/simulation/simulation - 6.jpg" width=300> |
+|player E put a blue cube|<img src="./assets/images/simulation/simulation - 7.jpg" width=300> |
+|player G put a orange cube|<img src="./assets/images/simulation/simulation - 8.jpg" width=300> |
 
 Mid phase, where player ask questions each other
 
 |question|answer|in case answer is negative |
 |------|----|----|
-|Player A asks player B: Could it be here (where the star is)? <img src="./images/simulation/simulation - 9a.jpg" width=300> | since the Beast can be inside 2 tiles near it’s inside, player B put a disc <img src="./images/simulation/simulation - 9b.jpg" width=300>|
-|Player B asks player C: Could it be here (where the star is)? <img src="./images/simulation/simulation - 10a.jpg" width=300> | the answer is negative so player C put a cube <img src="./images/simulation/simulation - 10b.jpg" width=300>| also player B needs to put a cube <img src="./images/simulation/simulation - 10c.jpg" width=300> |
+|Player A asks player B: Could it be here (where the star is)? <img src="./assets/images/simulation/simulation - 9a.jpg" width=300> | since the Beast can be inside 2 tiles near it’s inside, player B put a disc <img src="./assets/images/simulation/simulation - 9b.jpg" width=300>|
+|Player B asks player C: Could it be here (where the star is)? <img src="./assets/images/simulation/simulation - 10a.jpg" width=300> | the answer is negative so player C put a cube <img src="./assets/images/simulation/simulation - 10b.jpg" width=300>| also player B needs to put a cube <img src="./assets/images/simulation/simulation - 10c.jpg" width=300> |
 
 The beast is HERE
 
-<img src="./images/simulation/cryptid position.png" width=300> 
+<img src="./assets/images/simulation/cryptid position.png" width=300> 

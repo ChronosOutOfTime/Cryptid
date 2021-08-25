@@ -3,7 +3,7 @@
 This challenge is based over a table game i've played some time ago.
 Here the details of the game with the requirements to meet the challenge
 
-## Game rules
+## Game Rules
 
 In this game you need to find the tile where the beast Cryptid lives (hence the name of the challenge)
 

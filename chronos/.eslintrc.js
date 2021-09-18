@@ -7,10 +7,10 @@ module.exports = {
     jest: true,
   },
   parserOptions: {
+    extends: ["eslint:recommended", "prettier"],
     parser: "babel-eslint",
     sourceType: "module",
   },
-  extends: ["eslint:recommended", "prettier"],
   plugins: ["prettier"],
   // add your custom rules here
   rules: {

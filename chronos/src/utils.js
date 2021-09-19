@@ -1,6 +1,5 @@
 import * as THREE from "three";
 
-import * as materials from "./materials";
 import matrix from "./matrix";
 
 export function createHexPointsRotated(x, y, z, radius) {

@@ -9,24 +9,17 @@ import * as utils from "./utils";
 // const raycaster = new THREE.Raycaster();
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  10000
-);
-camera.position.z = 25;
-camera.position.x = 0;
+const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 10000);
+camera.position.set(0, -15, 25);
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+renderer.setSize(window.innerHeight, window.innerHeight);
+setTimeout(() => {
+  document.querySelector("#map").appendChild(renderer.domElement);
+}, 10);
 
 // CREATING HEXAGON
 
-let x = 0;
-let y = 0;
-let z = 0;
 let radius = 2;
 
 utils.createHexagons(scene, radius);
@@ -38,4 +31,4 @@ function animate() {
   controls.update();
 }
 
-animate();
+export default animate;

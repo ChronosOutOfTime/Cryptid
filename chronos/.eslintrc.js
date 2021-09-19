@@ -7,9 +7,13 @@ module.exports = {
     jest: true,
   },
   parserOptions: {
-    extends: ["eslint:recommended", "prettier"],
-    parser: "babel-eslint",
+    extends: ["react:recommended", "eslint:recommended", "prettier"],
+    parser: "@babel/eslint-parser",
     sourceType: "module",
+    ecmaVersion: 2020,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   plugins: ["prettier"],
   // add your custom rules here

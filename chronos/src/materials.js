@@ -12,6 +12,11 @@ export const green = new THREE.MeshBasicMaterial({ color: "#008000" });
 
 // TODO cryptid beast
 
-// TODO create puma and bear
-export const bear = new THREE.MeshBasicMaterial({ color: "#000000" });
-export const puma = new THREE.MeshBasicMaterial({ color: "#FF0000" });
+export const bear = new THREE.LineDashedMaterial({
+  color: "#000000",
+  linewidth: 1,
+  scale: 1,
+  dashSize: 3,
+  gapSize: 1,
+});
+export const puma = new THREE.LineBasicMaterial({ color: "#FF0000" });

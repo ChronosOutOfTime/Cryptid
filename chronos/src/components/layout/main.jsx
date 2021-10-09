@@ -35,6 +35,7 @@ export default function Layout() {
             action: {action}
           </div>
         ) : null}
+        <div className="mouse-coordinates"></div>
       </div>
       <div className="body" id="map">
         {map()}

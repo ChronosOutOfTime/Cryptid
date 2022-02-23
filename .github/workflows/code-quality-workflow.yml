@@ -15,7 +15,8 @@ jobs:
     steps:
     - name: Checking out
       uses: actions/checkout@v2
-      path: chronos
+      with:
+        path: chronos
 
     - name: Setup Node and npm
       uses: actions/setup-node@v2

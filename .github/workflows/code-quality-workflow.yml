@@ -10,16 +10,17 @@ on:
 
 jobs:
   code-quality:
-    name: Lint source code
+    name: Check source code
     runs-on: ubuntu-latest
     steps:
-    - name: "checking out"
+    - name: Checking out
       uses: actions/checkout@v2
+      path: chronos
 
     - name: Setup Node and npm
       uses: actions/setup-node@v2
       with:
-        node-version: '14.x'
+        node-version: '12.x'
 
     - name: Cache dependencies
       uses: actions/cache@v1
@@ -34,9 +35,7 @@ jobs:
           ${{ runner.os }}-
 
     - name: Install dependencies
-      run: |
-        npm install
+      run: npm install
 
-    - name: test files
-      run: |
-        npm test
+    - name: Test files
+      run: npm test

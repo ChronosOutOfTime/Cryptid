@@ -12,6 +12,9 @@ jobs:
   code-quality:
     name: Check source code
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./chronos
     steps:
     - name: Checking out
       uses: actions/checkout@v2
@@ -32,9 +35,6 @@ jobs:
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}-
-
-    - name: go to root folder
-      run: cd ./chronos
 
     - name: Install dependencies
       run: npm install

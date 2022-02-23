@@ -23,18 +23,20 @@ jobs:
 
     - name: Cache dependencies
       uses: actions/cache@v1
+      env:
+        cache-name: cache-node-modules
       with:
-        path: ./node\_modules
-        key: ${{ runner.OS }}-dependencies-${{ hashFiles('\*\*/package-lock.json') }}
+        path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.json') }}
         restore-keys: |
-          ${{ runner.OS }}-dependencies-${{ env.cache-name }}-
-          ${{ runner.OS }}-dependencies-
-          ${{ runner.OS }}-
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
 
     - name: Install dependencies
       run: |
         npm install
 
-    - name: Lint files
+    - name: test files
       run: |
         npm test

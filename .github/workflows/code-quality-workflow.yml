@@ -34,7 +34,7 @@ jobs:
           ${{ runner.os }}-
 
     - name: go to root folder
-      run: cd chronos
+      run: cd ./chronos
 
     - name: Install dependencies
       run: npm install

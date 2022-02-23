@@ -1,7 +1,7 @@
 {
   "name": "cryptid",
   "version": "1.0.0",
-  "description": "this is a challenge game",
+  "description": "challenge game",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
